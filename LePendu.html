@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Le Pendu</title>
+    <link href="LePendu.css" rel="stylesheet" type="text/css" />
+    <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="dico.js"></script>
+  </head>
+
+  <body onload="reloadHOF()">
+    <span id="titre"> LE PENDU </span>
+
+    <div id="boutonClick">
+      <button id="letsgo" onclick="go()">START</button>
+      <button id="rank" onclick="ranking()">RANKING</button>
+    </div>
+
+    <div id="resultat"></div>
+    
+    <div id="champLettre" style="display: none">
+      <input
+        id="inputLettre"
+        placeholder="Entrez une lettre"
+        type="text"
+        value=""
+      />
+      <span id="timer"></span>
+    </div>
+
+    <div id="apparitionMot"></div>
+
+    <div id="HOFRate"></div>
+
+    <div id="champPseudo" style="display: none">
+      <input
+        id="inputPseudo"
+        placeholder="Entrez un Pseudo"
+        type="text"
+        value=""
+      />
+    </div>
+
+    <div id="tableauMauvaisesLettres"></div>
+    
+    <div id="pendu" style="display: none">
+      <img id="hang" src="./Hangman-0.png" alt="Hangman-0" />
+    </div>
+
+    <div id="tableauHOF" style="display: none">
+      <table>
+        <tr>
+          <th scope="col">Rang</th>
+          <th scope="col">Pseudo</th>
+          <th scope="col">Mot Secret</th>
+          <th scope="col">Erreur</th>
+          <th scope="col">Temps</th>
+        </tr>
+        <tr>
+          <th scope="row">1</th>
+          <td id="prenom0"></td>
+          <td id="mot0"></td>
+          <td id="nombre0"></td>
+          <td id="time0"></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td id="prenom1"></td>
+          <td id="mot1"></td>
+          <td id="nombre1"></td>
+          <td id="time1"></td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td id="prenom2"></td>
+          <td id="mot2"></td>
+          <td id="nombre2"></td>
+          <td id="time2"></td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td id="prenom3"></td>
+          <td id="mot3"></td>
+          <td id="nombre3"></td>
+          <td id="time3"></td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td id="prenom4"></td>
+          <td id="mot4"></td>
+          <td id="nombre4"></td>
+          <td id="time4"></td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td id="prenom5"></td>
+          <td id="mot5"></td>
+          <td id="nombre5"></td>
+          <td id="time5"></td>
+        </tr>
+        <tr>
+          <th scope="row">7</th>
+          <td id="prenom6"></td>
+          <td id="mot6"></td>
+          <td id="nombre6"></td>
+          <td id="time6"></td>
+        </tr>
+        <tr>
+          <th scope="row">8</th>
+          <td id="prenom7"></td>
+          <td id="mot7"></td>
+          <td id="nombre7"></td>
+          <td id="time7"></td>
+        </tr>
+        <tr>
+          <th scope="row">9</th>
+          <td id="prenom8"></td>
+          <td id="mot8"></td>
+          <td id="nombre8"></td>
+          <td id="time8"></td>
+        </tr>
+        <tr>
+          <th scope="row">10</th>
+          <td id="prenom9"></td>
+          <td id="mot9"></td>
+          <td id="nombre9"></td>
+          <td id="time9"></td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="LePendu.js"></script>
+  </body>
+</html>

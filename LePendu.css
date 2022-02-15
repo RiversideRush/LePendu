@@ -1,0 +1,108 @@
+body{
+    text-align: center;
+    margin: 0 auto;
+    background-image: url(./fond-pendu.PNG);/*reference (capture) https://knowyourmeme.com/memes/yes-chad*/
+}
+#titre{
+    width: 50%;
+    margin: 0 auto;
+    border: 5px solid rgb(156, 19, 19);
+    font-size: 100px;
+}
+#boutonClick{
+    margin: 0 auto;
+    margin-top: 3%;
+}
+#letsgo{
+    margin-right: 5%;
+    font-size: 30px;
+}
+#rank{ 
+    margin-left: 5%;
+    font-size: 30px;
+}
+#resultat{
+    margin: 0 auto;
+    margin-top: 4%;
+    font-weight: bolder;
+}
+#champLettre{
+    margin : 0 auto;
+    margin-top: 5%;
+    font-size: 20px;
+}
+#inputLettre{
+    font-size: 20px;
+}
+#timer{
+    font-weight: bolder;
+    font-size: 25px;
+    color: rgb(25, 50, 160);
+}
+#apparitionMot{
+    margin : 0 auto;
+    margin-top: 3%;
+    color: rgb(100, 35, 5);
+}
+
+#HOFRate{
+    margin: 0 auto;
+    margin-top: 1%;
+    font-weight: bolder;
+}
+#champPseudo{
+    margin-top: 3%;
+    margin : 0 auto;
+    font-size: 20px;
+}
+#inputPseudo{
+    font-size: 20px;
+}
+
+#tableauMauvaisesLettres{
+    margin: 0 auto;
+    margin-top: 3%;
+}
+#pendu{
+    margin: 0 auto;  
+}
+
+img{
+    width: 25%;
+    margin: 0 auto;
+    border: 3px solid black;
+}
+
+
+td, th {
+    border: 2px solid rgb(250, 250, 250);
+    padding: 10px;
+}
+td {
+    text-align: center;
+}
+tr:nth-child(even) {
+    background-color: #eee;
+}
+tr{
+    background-color: rgb(179, 215, 223);
+}
+th[scope="col"] {
+    background-color: #696969;
+    color: #fff;
+}
+th[scope="row"] {
+    background-color: #d7d9f2;
+}
+table {
+    border-collapse: collapse;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: .8rem;
+    margin : 0 auto;
+    margin-top: 2.5%;
+}
+#tableauHOF{
+    margin: 0 auto;
+}
+
